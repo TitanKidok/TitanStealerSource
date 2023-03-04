@@ -6,6 +6,7 @@
 -- Erstellungszeit: 05. Jan 2023 um 03:56
 -- Server-Version: 10.4.27-MariaDB
 -- PHP-Version: 8.1.12
+-- Range
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
